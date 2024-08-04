@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(image/1510561.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.menu-bar{
+    background-color: rgb(2, 196, 196);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 15px;
+}
+.menu-bar ul li{
+    width: 130px;
+    padding: 25px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.active, .menu-bar ul li:hover{
+    background-color: rgb(12, 91, 77);
+    border-radius: 30px;
+}
+.fa{
+    color: aliceblue;
+    margin-right: 12px;
+}
+.main-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 190%;
+    font-weight: 500;
+    margin: 230px;
+    margin-top: 130px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    margin-top: 50px;
+    margin-left: 110px;
+    gap: 10px;
+    flex-direction: row;
+}
+.button input{
+    width: 120px;
+    height: 35px;
+    border-style: none;
+    font-size:50%;
+    background-color: rgb(12, 59, 59);
+    border-radius: 10px;
+    color: aliceblue;
+}
+span{
+    font-weight: bolder;
+    color: rgb(14, 90, 90);
+}
+.button input:hover{
+    background-color: rgb(3, 108, 108);
+    color: rgb(4, 58, 39);
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: rgb(2, 196, 196);
+    color: aliceblue;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 2px solid #ffff;
+}
